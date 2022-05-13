@@ -1,0 +1,14 @@
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("ChIC")
+
+#use the above code in R to install my ChIC library 
+
+library(ChIC)
+
+#use that code to load the library and it gave me this error 
+
+> library(ChIC)
+Error: package or namespace load failed for ‘ChIC’ in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]):
+ there is no package called ‘ChIC.data’
